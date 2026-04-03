@@ -82,10 +82,10 @@ body {
   border-color: var(--color-text-muted);
 }
 
-[data-theme="dark"] .icon-sun { display: inline; }
-[data-theme="dark"] .icon-moon { display: none; }
 .icon-sun { display: none; }
 .icon-moon { display: inline; }
+[data-theme="dark"] .icon-sun { display: inline; }
+[data-theme="dark"] .icon-moon { display: none; }
 
 .nav {
   position: fixed;
