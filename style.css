@@ -584,6 +584,15 @@ body {
   color: var(--color-text-secondary);
   border-radius: 2px;
   border: 1px solid var(--color-border-light);
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+  cursor: default;
+}
+
+.skill-tags span:hover {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
 }
 
 /* ===== Contact ===== */
