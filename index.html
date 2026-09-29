@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <!-- Navigation -->
@@ -19,8 +19,8 @@
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
         <li><a href="#publications">Publications</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -42,7 +42,7 @@
         <p class="hero-tagline">Computer Engineering &amp; AI Researcher</p>
         <p class="hero-sub">
           University of Waterloo &middot; 4.0/4.0 GPA<br>
-          Researching NLP, Vision-Language Models &amp; Information Retrieval
+          Researching Search Agents, VLM Evaluation &amp; Generative Models<br>Autonomy Intern @ Waabi
         </p>
         <div class="hero-links">
           <a href="mailto:a32du@uwaterloo.ca" class="btn btn-primary">Get in Touch</a>
@@ -81,13 +81,13 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I am an undergraduate student in <strong>Computer Engineering</strong> with an <strong>Option in Artificial Intelligence</strong> at the University of Waterloo, maintaining a <strong>perfect 4.0 GPA</strong>. My research interests lie at the intersection of <strong>Natural Language Processing</strong>, <strong>Vision-Language Models</strong>, and <strong>Information Retrieval</strong>.
+            I am an undergraduate student in <strong>Computer Engineering</strong> with an <strong>Option in Artificial Intelligence</strong> at the University of Waterloo (CGPA 90.87/100). My research spans <strong>Information Retrieval &amp; Search Agents</strong>, <strong>Vision-Language Model Evaluation</strong>, and <strong>Generative Models</strong>. I am currently an <strong>Autonomy and Algorithm Engineer Intern at Waabi</strong>, working on novel view synthesis quality evaluation for self-driving simulation.
           </p>
           <p>
-            I have had the privilege of working with <a href="https://www.mcgill.ca/geography/sieber" target="_blank">Prof. Renee Sieber</a> and <a href="https://fengranmark.github.io/" target="_blank">Dr. Fengran Mo</a> (McGill University), <a href="https://wenhuchen.github.io/" target="_blank">Prof. Wenhu Chen</a> and <a href="https://kuwingfung.github.io/" target="_blank">PhD Max Ku</a> (University of Waterloo), and <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang" target="_blank">Prof. En-Hui Yang</a> (University of Waterloo) on projects spanning benchmark construction, retrieval-augmented generation, and adversarial robustness.
+            I have had the privilege of working with <a href="https://wenhuchen.github.io/" target="_blank" rel="noopener">Prof. Wenhu Chen</a> and <a href="https://kuwingfung.github.io/" target="_blank" rel="noopener">Max Ku</a> on image evaluation, <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/a6karimi" target="_blank" rel="noopener">Prof. Amir-Hossein Karimi</a> and Ahmed Abdelaal on generative priors for inverse problems, <a href="https://rali.iro.umontreal.ca/nie/jian-yun-nie/" target="_blank" rel="noopener">Prof. Jian-Yun Nie</a> and Yuxing Tian (Université de Montréal) on search agents, <a href="https://www.mcgill.ca/geography/sieber" target="_blank" rel="noopener">Prof. Renée Sieber</a> (McGill University) and <a href="https://fengran-mo.github.io/" target="_blank" rel="noopener">Prof. Fengran Mo</a> (Rochester Institute of Technology) on retrieval benchmarks, and <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang" target="_blank" rel="noopener">Prof. En-Hui Yang</a> on adversarial robustness.
           </p>
           <p>
-            I am actively seeking <strong>Master's and research positions</strong> where I can deepen my contributions to NLP and multimodal AI research.
+            I am actively seeking <strong>graduate and research positions</strong> in retrieval, multimodal AI, and generative modeling.
           </p>
         </div>
         <div class="about-highlights">
@@ -96,24 +96,76 @@
             <span class="highlight-label">GPA (out of 4.0)</span>
           </div>
           <div class="highlight-card">
-            <span class="highlight-number">3</span>
-            <span class="highlight-label">Research Labs</span>
+            <span class="highlight-number">6</span>
+            <span class="highlight-label">Papers</span>
           </div>
           <div class="highlight-card">
-            <span class="highlight-number">ACL</span>
-            <span class="highlight-label">2025 Publication</span>
+            <span class="highlight-number">4</span>
+            <span class="highlight-label">Co-first Author</span>
           </div>
           <div class="highlight-card">
-            <span class="highlight-number">SIGIR</span>
-            <span class="highlight-label">2026 Reviewer</span>
+            <span class="highlight-number">Waabi</span>
+            <span class="highlight-label">Current Intern</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Publications -->
+  <section class="section section-alt" id="publications">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <p class="pub-note">* denotes equal contribution.</p>
+
+      <h3 class="pub-group">Published</h3>
+      <div class="publications">
+        <div class="pub-card">
+          <span class="pub-venue">SIGIR 2026</span>
+          <h3 class="pub-title"><a href="https://arxiv.org/pdf/2510.05336" target="_blank" rel="noopener">WeatherArchive-Bench: Benchmarking Retrieval-Augmented Reasoning for Historical Weather Archives</a></h3>
+          <p class="pub-authors">Yongan Yu*, <strong>Xianda Du*</strong>, Qingchen Hu*, Jiahao Liang*, Jingwei Ni, Dan Qiang, Kaiyu Huang, Grant McKenzie, Renée Sieber, and Fengran Mo</p>
+          <p class="pub-desc">A retrieval-augmented reasoning benchmark over 1M+ archival news segments and 335 expert-curated queries, pairing passage retrieval with IPCC-aligned climate vulnerability assessment.</p>
+        </div>
+        <div class="pub-card">
+          <span class="pub-venue">NeurIPS 2026 Workshop BeNTo</span>
+          <h3 class="pub-title"><a href="https://openreview.net/forum?id=fFaia8AlUm" target="_blank" rel="noopener">Mean Flows as Controllable Priors for Solving Inverse Problems</a></h3>
+          <p class="pub-authors">Ahmed Abdelaal, <strong>Xianda Du</strong>, and Amir-Hossein Karimi</p>
+          <p class="pub-desc">Uses pretrained MeanFlow finite-interval transport maps as controllable priors for training-free inverse problems, and introduces Receding-Horizon State Optimization (RHSO).</p>
+        </div>
+        <div class="pub-card">
+          <span class="pub-venue">ACL 2025 Findings</span>
+          <h3 class="pub-title"><a href="https://aclanthology.org/2025.findings-acl.207/" target="_blank" rel="noopener">WXImpactBench: A Disruptive Weather Impact Understanding Benchmark for Evaluating Large Language Models</a></h3>
+          <p class="pub-authors">Yongan Yu*, Qingchen Hu*, <strong>Xianda Du*</strong>, Jiayin Wang, Fengran Mo, and Renée Sieber</p>
+          <p class="pub-desc">The first benchmark for LLM understanding of disruptive weather impacts: 1,736 samples across 6 impact categories, with multi-label classification and ranking-based QA tasks.</p>
+        </div>
+      </div>
+
+      <h3 class="pub-group">Under Review</h3>
+      <div class="publications">
+        <div class="pub-card pub-card-wip">
+          <span class="pub-venue">ICLR 2027 &middot; Under Review</span>
+          <h3 class="pub-title">VIEScore2: Unified Image Evaluation with Spatially Grounded Explanations</h3>
+          <p class="pub-authors"><strong>Xianda Du*</strong>, Max Ku*, Weiming Ren, Zhi Rui Tam, Chunlin Ren, Ping Nie, Min-Hung Chen, and Wenhu Chen</p>
+          <p class="pub-desc">A unified VLM evaluator for image generation and editing that jointly predicts quality scores and defect locations on a text-native grid, trained with SFT and GRPO. Manuscript available upon request.</p>
+        </div>
+        <div class="pub-card pub-card-wip">
+          <span class="pub-venue">ICLR 2027 &middot; Under Review</span>
+          <h3 class="pub-title">Evidence in the Loop: Training Search Agents from Knowledge Graphs</h3>
+          <p class="pub-authors">Yuxing Tian*, <strong>Xianda Du*</strong>, Weixu Zhang, Jia Ao Sun, Fengran Mo, and Jian-Yun Nie</p>
+          <p class="pub-desc">A self-evolving search-agent framework that grounds question generation and process rewards in verified, retrievable corpus evidence from multi-hop KG paths. Manuscript available upon request.</p>
+        </div>
+        <div class="pub-card pub-card-wip">
+          <span class="pub-venue">ICLR 2027 &middot; Under Review</span>
+          <h3 class="pub-title">Mean Flows as Controllable Priors for Solving Inverse Problems</h3>
+          <p class="pub-authors">Ahmed Abdelaal, <strong>Xianda Du</strong>, and Amir-Hossein Karimi</p>
+          <p class="pub-desc">Full conference version with capacity-matched pixel- and latent-space comparisons across five ImageNet restoration tasks, four solvers, and four priors. Manuscript available upon request.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Research -->
-  <section class="section section-alt" id="research">
+  <section class="section" id="research">
     <div class="container">
       <h2 class="section-title">Research Experience</h2>
       <div class="timeline">
@@ -123,47 +175,15 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3>Research Assistant</h3>
-                <p class="timeline-institution">Université de Montréal &middot;</p>
-              </div>
-              <span class="timeline-date">Jun 2026 &ndash; Present</span>
-            </div>
-            <ul>
-              <li><strong>Agentic Search via Direct Corpus Interaction</strong> (In Progress, targeting ICLR 2027): Training search agents that explore raw corpora directly with general-purpose terminal tools, adaptively deciding when and how to retrieve so the approach scales to large corpora.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Research Assistant</h3>
-                <p class="timeline-institution">McGill University &middot; Advisor: Prof. Renee Sieber</p>
-              </div>
-              <span class="timeline-date">Sep 2024 &ndash; Present</span>
-            </div>
-            <ul>
-              <li><strong>WXImpactBench</strong> (ACL 2025): Built a benchmark for evaluating LLMs on multi-label classification and retrieval of societal impacts from historical weather disasters; proposed a unified evaluation pipeline.</li>
-              <li><strong>WeatherArchive-Bench</strong> (SIGIR 2026 Resource Track): Constructed a 1M+ segment benchmark for retrieval and climate vulnerability assessment aligned with IPCC frameworks.</li>
-              <li><strong>WXChat</strong> (In Progress): Developed a large-scale archival newspaper dataset via adaptive preprocessing, layout-aware segmentation, and LLM-based post-correction.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Research Assistant</h3>
-                <p class="timeline-institution">University of Waterloo &middot; Advisor: Prof. Wenhu Chen</p>
+                <h3><a href="https://github.com/vinesmsuic/VIEScore2" target="_blank" rel="noopener">Research Assistant &mdash; VIEScore2</a></h3>
+                <p class="timeline-institution">University of Waterloo &middot; Advisor: Prof. Wenhu Chen &middot; Mentor: Max Ku</p>
               </div>
               <span class="timeline-date">Oct 2025 &ndash; Present</span>
             </div>
             <ul>
-              <li><strong>VIEScore2</strong> (In Progress, targeting ICLR 2027): Developing a unified supervised fine-tuning framework for vision-language models on image quality evaluation with visual grounding.</li>
+              <li>Co-first authored <strong>VIEScore2</strong>, a unified VLM evaluator for image generation and editing that jointly predicts quality scores and defect locations on a text-native <strong>N&times;N grid</strong>, with a parameter-free parser that turns predictions into spatially grounded explanations.</li>
+              <li>Unified <strong>38K</strong> training examples from <strong>5 sources</strong> (ImagenWorld, RichHF, PAL4VST, etc.); fine-tuned <strong>Qwen3-VL-8B</strong> via SFT (DeepSpeed ZeRO-3) followed by <strong>GRPO</strong> with cell-level Dice, score-accuracy, and format rewards.</li>
+              <li>Reached overall-score <strong>SRCC 0.601</strong> vs. 0.491 for Gemini-3-Flash, the strongest zero-shot VLM baseline; ranked <strong>1st</strong> in grid IoU on <strong>3 of 6</strong> defect-localization benchmarks and top-3 on 5.</li>
             </ul>
           </div>
         </div>
@@ -173,46 +193,71 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3>Undergraduate Research Assistant</h3>
+                <h3><a href="https://github.com/Abdelaal495/controllable-image-generation" target="_blank" rel="noopener">Research Assistant &mdash; Controllable Generative Priors</a></h3>
+                <p class="timeline-institution">University of Waterloo &middot; Advisor: Prof. Amir-Hossein Karimi &middot; Mentor: Ahmed Abdelaal</p>
+              </div>
+              <span class="timeline-date">Aug 2026 &ndash; Present</span>
+            </div>
+            <ul>
+              <li>Formulated pretrained <strong>MeanFlow</strong> finite-interval transport maps as <strong>controllable priors</strong> for training-free inverse problems, running existing flow solvers (D-Flow, PnP-Flow, MPC-Flow) without retraining.</li>
+              <li>Introduced <strong>Receding-Horizon State Optimization (RHSO)</strong>; best in <strong>35 of 60</strong> task&ndash;metric cells and <strong>200 of 240</strong> pairwise comparisons across 5 ImageNet restoration tasks, 4 solvers, and 4 priors.</li>
+              <li>Built a unified benchmark over pixel- and latent-space priors (JiT, pMF, SiT-XL, iMF) spanning <strong>PyTorch</strong> and <strong>JAX</strong>, with sharded SLURM sweeps on Alliance clusters.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Research Assistant &mdash; Evidence-Grounded Search Agents</h3>
+                <p class="timeline-institution">Université de Montréal &middot; Advisor: Prof. Jian-Yun Nie &middot; Mentor: Yuxing Tian</p>
+              </div>
+              <span class="timeline-date">Jul 2026 &ndash; Sep 2026</span>
+            </div>
+            <ul>
+              <li>Co-first authored <strong>Evidence-in-the-Loop</strong>, a self-evolving Proposer&ndash;Solver framework that trains LLM search agents with RL on questions synthesized from <strong>multi-hop Wikidata KG paths</strong> backed by verified, retrievable evidence.</li>
+              <li>Designed <strong>evidence acquisition</strong> and <strong>evidence utilization</strong> process rewards that credit actual retrieval of verified passages instead of entity mentions, curbing reward hacking.</li>
+              <li>Achieved the <strong>best average EM/F1 in all 5 training settings</strong> over SSP and KG-Path, winning <strong>18 of 20</strong> multi-hop comparisons; generated questions lift downstream multi-hop F1 from <strong>30.4 to 35.3</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3><a href="https://github.com/Weather-Archival-Rescue" target="_blank" rel="noopener">Research Assistant &mdash; Weather Archival Rescue</a></h3>
+                <p class="timeline-institution">McGill University &middot; Advisors: Prof. Renée Sieber, Prof. Fengran Mo (RIT) &middot; with RBC Borealis AI and CEIMIA</p>
+              </div>
+              <span class="timeline-date">Sep 2024 &ndash; Present</span>
+            </div>
+            <ul>
+              <li><strong>WXImpactBench</strong> (ACL 2025 Findings, co-first author): the first benchmark for LLM understanding of disruptive weather impacts (1,736 samples, 6 impact categories); evaluated 8+ LLMs on multi-label classification and 100-passage ranking QA.</li>
+              <li><strong>WeatherArchive-Bench</strong> (SIGIR 2026, co-first author): retrieval-augmented reasoning over 1M+ archival segments and 335 expert queries; benchmarked 13+ retrievers and 17 LLMs, peaking at <strong>95.8%</strong> Recall@100.</li>
+              <li><strong>WXChat</strong> (ongoing): digitization pipeline for Victorian-era newspapers with Tesseract 5 OCR, layout-aware column segmentation, and async GPT-4o-mini post-OCR correction.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3><a href="https://github.com/XiandaDu/Noise-Injection-Analysis" target="_blank" rel="noopener">Undergraduate Research Assistant &mdash; Noise Injection Analysis</a></h3>
                 <p class="timeline-institution">University of Waterloo &middot; Advisor: Prof. En-Hui Yang</p>
               </div>
               <span class="timeline-date">Jan 2025 &ndash; Apr 2025</span>
             </div>
             <ul>
-              <li><strong>Noise Injection Analysis</strong>: Analyzed effects of Gaussian noise and adversarial perturbations (FGSM) on intermediate representations in pretrained ResNet-18.</li>
+              <li>Studied the effects of Gaussian noise (9 levels) and <strong>FGSM</strong> adversarial perturbations on intermediate feature representations of pretrained <strong>ResNet-18</strong> on ImageNet, across 4 network layers.</li>
             </ul>
           </div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Publications -->
-  <section class="section" id="publications">
-    <div class="container">
-      <h2 class="section-title">Publications &amp; Service</h2>
-      <div class="publications">
-        <div class="pub-card">
-          <span class="pub-venue">ACL 2025</span>
-          <h3 class="pub-title"><a href="https://aclanthology.org/2025.findings-acl.207/" target="_blank">WXImpactBench: A Benchmark for Evaluating LLMs on Historical Disruptive Weather Impacts</a></h3>
-          <p class="pub-authors"><strong>Xianda Du*</strong>, et al. (*Co-first author)</p>
-          <p class="pub-desc">The first benchmark combining NLP and meteorology for LLMs' understanding of historical disruptive weather impacts. Benchmarked 12 LLMs on multi-label classification and ranking-based QA tasks across 1.7K annotated samples.</p>
-        </div>
-        <div class="pub-card">
-          <span class="pub-venue">SIGIR 2026 Resource Track</span>
-          <h3 class="pub-title"><a href="https://arxiv.org/html/2510.05336" target="_blank">WeatherArchive-Bench: A Climate-Domain RAG Benchmark</a></h3>
-          <p class="pub-authors"><strong>Xianda Du*</strong>, et al. (*Co-first author)</p>
-          <p class="pub-desc">A benchmark to assess retriever accuracy, climate adaptation, and generation quality for improving LLM reliability in domain-specific tasks.</p>
-        </div>
-        <div class="pub-card pub-card-service">
-          <span class="pub-venue">Academic Service</span>
-          <h3 class="pub-title">SIGIR 2026 Resource Track &mdash; Reviewer</h3>
-        </div>
-        <div class="pub-card pub-card-service">
-          <span class="pub-venue">Academic Service</span>
-          <h3 class="pub-title">MeLLM 2026 &mdash; Reviewer</h3>
-        </div>
       </div>
     </div>
   </section>
@@ -228,15 +273,13 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3>Research Assistant (NLP Benchmark)</h3>
-                <p class="timeline-institution">McGill University &ndash; RBC Borealis AI</p>
+                <h3>Autonomy and Algorithm Engineer Intern</h3>
+                <p class="timeline-institution">Waabi &middot; Toronto, ON</p>
               </div>
-              <span class="timeline-date">Oct 2024 &ndash; Oct 2025</span>
+              <span class="timeline-date">Sep 2026 &ndash; Dec 2026</span>
             </div>
             <ul>
-              <li>Co-first authored WXImpactBench (ACL 2025), combining NLP and meteorology for understanding historical weather impacts.</li>
-              <li>Processed 53K+ OCR-scanned articles with GPT-4o post-OCR correction, LDA topic modeling, and expert curation.</li>
-              <li>Benchmarked 12 LLMs with multi-label classification and ranking-based QA evaluation using a sliding window re-ranking pipeline.</li>
+              <li>Working on <strong>novel view synthesis (NVS) quality evaluation</strong> for sensor-simulation reconstruction models in self-driving, an exploratory effort to design metrics and pipelines that assess rendering fidelity at novel viewpoints.</li>
             </ul>
           </div>
         </div>
@@ -246,14 +289,34 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3>RAG Project Technical Lead</h3>
-                <p class="timeline-institution">University of Waterloo, WatAI</p>
+                <h3>Machine Learning Engineer</h3>
+                <p class="timeline-institution">StackAdapt &middot; Toronto, ON</p>
+              </div>
+              <span class="timeline-date">Jan 2026 &ndash; Apr 2026</span>
+            </div>
+            <ul>
+              <li>Shipped the <strong>Precision Audience</strong> LLM pipeline that turns unstructured advertiser ICPs into executable boolean segment plans across 9 audience sources &times; 10 geo locations per request, built on GPT-5 with Pydantic-typed structured outputs and an async Redis-backed worker pool.</li>
+              <li>Built a <strong>4-layer hallucination detection</strong> system (schema enforcement, reference-grounding, strict enum validation, safeguard rules) so every output segment maps to a validated upstream source.</li>
+              <li>Designed prompt hardening (injection detection, sensitive-data taxonomy) and a typed exception hierarchy with per-geo <strong>partial-success (207)</strong> responses.</li>
+              <li>Scaled coverage to <strong>~12.7K segments</strong> with hybrid retrieval on <strong>Qdrant</strong> (dense + BM25 + RRF, geo-indexed prefilter) and an incremental ingestion pipeline with snapshot/restore rollback to S3.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3><a href="https://github.com/XiandaDu/WatAIOliver" target="_blank" rel="noopener">RAG Project Technical Lead</a></h3>
+                <p class="timeline-institution">University of Waterloo, WatAI &middot; Waterloo, ON</p>
               </div>
               <span class="timeline-date">Apr 2025 &ndash; Dec 2025</span>
             </div>
             <ul>
-              <li>Built a production RAG flow with LangChain supporting multiple LLM backends, hybrid retrieval (dense + BM25), re-ranking, and grounded citations.</li>
-              <li>Implemented agent tools, model routing by speed/cost/capability, and evaluation with Recall@k, nDCG, and LLM-as-judge faithfulness.</li>
+              <li>Designed a research-oriented <strong>RAG</strong> system for educational QA supporting Qwen, OpenAI, and Gemini through a LangChain-based interface with streaming inference.</li>
+              <li>Built retrieval over course PDFs and slides with hybrid BM25 + dense search, re-ranking, and citation-grounded generation; evaluated with Recall@k, nDCG, and LLM-as-a-judge faithfulness.</li>
+              <li>Implemented tool-augmented querying and model routing to compare quality, latency, and cost trade-offs.</li>
             </ul>
           </div>
         </div>
@@ -263,14 +326,31 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3>Platform Developer</h3>
-                <p class="timeline-institution">University of Waterloo, ECE Department</p>
+                <h3><a href="https://app.vluence.com/" target="_blank" rel="noopener">Platform Developer</a></h3>
+                <p class="timeline-institution">University of Waterloo, ECE Department &middot; Waterloo, ON</p>
               </div>
               <span class="timeline-date">Sep 2024 &ndash; Dec 2024</span>
             </div>
             <ul>
-              <li>Fine-tuned Hugging Face sentiment analysis models using TensorFlow/PyTorch, achieving 80% accuracy on media content classification.</li>
-              <li>Built a pipeline to convert embeddings from PostgreSQL on GKE into a neural network for article classification.</li>
+              <li>Fine-tuned Hugging Face sentiment models with TensorFlow/PyTorch for media content classification, reaching <strong>80%</strong> accuracy.</li>
+              <li>Built a pipeline feeding embeddings and metadata from PostgreSQL on GKE into a custom neural network for scraped-article classification.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3><a href="https://github.com/XiandaDu/HKU-Web3-Quant" target="_blank" rel="noopener">Web 3.0 Quantitative Trading Challenge</a></h3>
+                <p class="timeline-institution">Competition Project</p>
+              </div>
+              <span class="timeline-date">Jun 2025 &ndash; Nov 2025</span>
+            </div>
+            <ul>
+              <li>Framed 15-min crypto returns as a ranking task; trained TabNet, XGBoost, MLP, and LightGBM via Optuna, scoring <strong>0.57 Weighted Spearman</strong> on the public leaderboard.</li>
+              <li>Engineered leak-safe rolling-window features and built an <strong>8-model LightGBM ensemble</strong> with weighted blending to stabilize ranks.</li>
             </ul>
           </div>
         </div>
@@ -282,55 +362,66 @@
   <!-- Skills -->
   <section class="section" id="skills">
     <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
+      <h2 class="section-title">Skills &amp; Service</h2>
       <div class="skills-grid">
         <div class="skill-category">
           <h3>Machine Learning &amp; AI</h3>
           <div class="skill-tags">
-            <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Transformers</span>
-            <span>Scikit-learn</span><span>RAG</span><span>CNN</span><span>LSTM</span>
-            <span>XGBoost</span><span>LightGBM</span><span>HPO</span>
+            <span>PyTorch</span><span>JAX</span><span>TensorFlow</span><span>Keras</span><span>Transformers</span>
+            <span>Scikit-learn</span><span>DeepSpeed</span><span>XGBoost</span><span>LightGBM</span><span>HPO</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Research Areas</h3>
+          <div class="skill-tags">
+            <span>Information Retrieval</span><span>Search Agents</span><span>RAG</span>
+            <span>Vision-Language Models</span><span>RL for LLMs (GRPO)</span><span>Generative Models</span>
           </div>
         </div>
         <div class="skill-category">
           <h3>Programming Languages</h3>
           <div class="skill-tags">
             <span>Python</span><span>JavaScript/TypeScript</span><span>C/C++</span>
-            <span>Java</span><span>SQL</span><span>Bash</span><span>R</span><span>MATLAB</span>
+            <span>Java</span><span>SQL</span><span>Bash</span><span>R</span><span>MATLAB</span><span>HTML/CSS</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3>Frameworks &amp; Tools</h3>
+          <h3>Developer Tools</h3>
           <div class="skill-tags">
-            <span>React</span><span>FastAPI</span><span>LangChain</span><span>Docker</span>
-            <span>Kubernetes</span><span>GCP</span><span>AWS</span><span>Git</span>
-            <span>Supabase</span><span>Qdrant</span>
+            <span>Git</span><span>Docker</span><span>Kubernetes</span><span>SLURM</span>
+            <span>Cloud Platforms</span><span>LangChain</span><span>Scrapy</span><span>Supabase</span><span>Qdrant</span>
           </div>
         </div>
         <div class="skill-category">
           <h3>Data &amp; Analysis</h3>
           <div class="skill-tags">
             <span>NumPy</span><span>Pandas</span><span>OpenCV</span><span>Matplotlib</span>
-            <span>HuggingFace</span><span>Jupyter</span>
           </div>
         </div>
         <div class="skill-category">
           <h3>Languages</h3>
           <div class="skill-tags">
             <span>Chinese (Native)</span><span>English (Fluent)</span>
-            <span>Japanese (Intermediate)</span><span>French (Beginner)</span>
           </div>
         </div>
       </div>
+
+      <h3 class="pub-group">Service &amp; Open Source</h3>
+      <ul class="service-list">
+        <li><span class="service-role">Reviewer</span> SIGIR 2026 Resource Track</li>
+        <li><span class="service-role">Reviewer</span> MeLLM @ ACL 2026</li>
+        <li><span class="service-role">Developer</span> <a href="https://github.com/castorini/rank_llm" target="_blank" rel="noopener">RankLLM</a>, an open-source toolkit for LLM reranking</li>
+      </ul>
     </div>
   </section>
+
 
   <!-- Contact -->
   <section class="section section-alt" id="contact">
     <div class="container">
       <h2 class="section-title">Get in Touch</h2>
       <p class="contact-text">
-        I am actively looking for Master's and research positions in NLP, multimodal AI, and information retrieval. Feel free to reach out.
+        I am actively looking for graduate and research positions in retrieval, multimodal AI, and generative modeling. Feel free to reach out.
       </p>
       <div class="contact-grid">
         <a href="mailto:a32du@uwaterloo.ca" class="contact-card">
@@ -356,6 +447,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

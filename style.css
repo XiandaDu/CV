@@ -413,7 +413,7 @@ body {
 }
 
 .section-alt .timeline-content {
-  background: #fff;
+  background: var(--color-surface);
 }
 
 .timeline-header {
@@ -523,7 +523,7 @@ body {
 
 .pub-card-service .pub-venue {
   color: var(--color-accent-warm);
-  background: #fdf2f3;
+  background: var(--color-bg-alt);
 }
 
 .pub-title {
@@ -544,6 +544,76 @@ body {
   font-size: 0.85rem;
   color: var(--color-text-secondary);
   line-height: 1.6;
+}
+
+.pub-title a,
+.timeline-header h3 a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border);
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.pub-title a:hover,
+.timeline-header h3 a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.pub-authors strong {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.pub-note {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin: -24px 0 28px;
+}
+
+.pub-group {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 36px 0 14px;
+}
+
+.pub-note + .pub-group {
+  margin-top: 0;
+}
+
+/* ===== Service ===== */
+.service-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-list li {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.service-role {
+  flex-shrink: 0;
+  min-width: 84px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-warm);
+}
+
+.service-list a,
+.about-text a {
+  color: var(--color-accent);
 }
 
 /* ===== Skills ===== */
