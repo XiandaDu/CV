@@ -84,7 +84,7 @@
             I am an undergraduate student in <strong>Computer Engineering</strong> with an <strong>Option in Artificial Intelligence</strong> at the University of Waterloo (CGPA 90.87/100). My research spans <strong>Information Retrieval &amp; Search Agents</strong>, <strong>Vision-Language Model Evaluation</strong>, and <strong>Generative Models</strong>. I am currently an <strong>Autonomy and Algorithm Engineer Intern at Waabi</strong>, working on novel view synthesis quality evaluation for self-driving simulation.
           </p>
           <p>
-            I have had the privilege of working with <a href="https://wenhuchen.github.io/" target="_blank" rel="noopener">Prof. Wenhu Chen</a> and <a href="https://kuwingfung.github.io/" target="_blank" rel="noopener">Max Ku</a> on image evaluation, <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/a6karimi" target="_blank" rel="noopener">Prof. Amir-Hossein Karimi</a> and Ahmed Abdelaal on generative priors for inverse problems, <a href="https://rali.iro.umontreal.ca/nie/jian-yun-nie/" target="_blank" rel="noopener">Prof. Jian-Yun Nie</a> and Yuxing Tian (Université de Montréal) on search agents, <a href="https://www.mcgill.ca/geography/sieber" target="_blank" rel="noopener">Prof. Renée Sieber</a> and <a href="https://fengran-mo.github.io/" target="_blank" rel="noopener">Dr. Fengran Mo</a> (McGill University) on retrieval benchmarks, and <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang" target="_blank" rel="noopener">Prof. En-Hui Yang</a> on adversarial robustness.
+            I have had the privilege of working with <a href="https://wenhuchen.github.io/" target="_blank" rel="noopener">Prof. Wenhu Chen</a> and <a href="https://kuwingfung.github.io/" target="_blank" rel="noopener">Max Ku</a> on image evaluation, <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/a6karimi" target="_blank" rel="noopener">Prof. Amir-Hossein Karimi</a> and Ahmed Abdelaal on generative priors for inverse problems, <a href="https://rali.iro.umontreal.ca/nie/jian-yun-nie/" target="_blank" rel="noopener">Prof. Jian-Yun Nie</a> and Yuxing Tian (Université de Montréal) on search agents, <a href="https://cs.uwaterloo.ca/~jimmylin/" target="_blank" rel="noopener">Prof. Jimmy Lin</a> on LLM reranking,<a href="https://www.mcgill.ca/geography/sieber" target="_blank" rel="noopener">Prof. Renée Sieber</a> and <a href="https://fengran-mo.github.io/" target="_blank" rel="noopener">Dr. Fengran Mo</a> (McGill University) on retrieval benchmarks, and <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang" target="_blank" rel="noopener">Prof. En-Hui Yang</a> on adversarial robustness.
           </p>
           <p>
             I am actively seeking <strong>graduate and research positions</strong> in retrieval, multimodal AI, and generative modeling.
@@ -245,6 +245,23 @@
               <li>Co-first authored <strong>Evidence-in-the-Loop</strong>, a self-evolving <strong>Proposer&ndash;Solver</strong> framework that trains LLM search agents with <strong>RL</strong> on questions synthesized online from <strong>multi-hop Wikidata KG paths</strong>, keeping only paths whose every triplet is backed by verified, <strong>E5</strong>-retrievable Wikipedia evidence.</li>
               <li>Designed two <strong>process rewards</strong>, <strong>evidence acquisition</strong> and <strong>evidence utilization</strong>, that credit actual retrieval of verified passages instead of entity mentions, curbing the <strong>reward hacking</strong> of entity-based rewards (E-GRPO, KG-Path).</li>
               <li>Achieved the <strong>best average EM/F1 in all 5 training settings</strong> (Qwen2.5-7B Base/Instruct, LLaMA-3.1-8B, Qwen3-8B, Search-R1-7B) over SSP and KG-Path, winning <strong>18 of 20</strong> multi-hop comparisons; Proposer-generated questions lift downstream multi-hop F1 from <strong>30.4 to 35.3</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3><a href="https://github.com/castorini/rank_llm" target="_blank" rel="noopener">Research Assistant &mdash; LLM Reranking (RankLLM)</a></h3>
+                <p class="timeline-institution">University of Waterloo &middot; Advisor: Prof. Jimmy Lin</p>
+              </div>
+              <span class="timeline-date">Jun 2026 &ndash; Present</span>
+            </div>
+            <ul>
+              <li>Contributing to <strong>RankLLM</strong>, Castorini&rsquo;s open-source toolkit for <strong>LLM-based listwise reranking</strong>: integrated <strong>SPLADE-v3</strong> learned sparse retrieval as a first-stage retriever and upgraded the <strong>Pyserini</strong> backend to v2.4.0.</li>
+              <li>Improved reranking reproducibility by enforcing deterministic decoding, and wrote a Colab CLI onboarding guide covering installation, sanity checks, and end-to-end <strong>RankZephyr</strong> reranking.</li>
             </ul>
           </div>
         </div>
