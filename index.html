@@ -84,7 +84,7 @@
             I am an undergraduate student in <strong>Computer Engineering</strong> with an <strong>Option in Artificial Intelligence</strong> at the University of Waterloo (CGPA 90.87/100). My research spans <strong>Information Retrieval &amp; Search Agents</strong>, <strong>Vision-Language Model Evaluation</strong>, and <strong>Generative Models</strong>. I am currently an <strong>Autonomy and Algorithm Engineer Intern at Waabi</strong>, working on novel view synthesis quality evaluation for self-driving simulation.
           </p>
           <p>
-            I have had the privilege of working with <a href="https://wenhuchen.github.io/" target="_blank" rel="noopener">Prof. Wenhu Chen</a> and <a href="https://kuwingfung.github.io/" target="_blank" rel="noopener">Max Ku</a> on image evaluation, <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/a6karimi" target="_blank" rel="noopener">Prof. Amir-Hossein Karimi</a> and Ahmed Abdelaal on generative priors for inverse problems, <a href="https://rali.iro.umontreal.ca/nie/jian-yun-nie/" target="_blank" rel="noopener">Prof. Jian-Yun Nie</a> and Yuxing Tian (Université de Montréal) on search agents, <a href="https://www.mcgill.ca/geography/sieber" target="_blank" rel="noopener">Prof. Renée Sieber</a> (McGill University) and <a href="https://fengran-mo.github.io/" target="_blank" rel="noopener">Prof. Fengran Mo</a> (Rochester Institute of Technology) on retrieval benchmarks, and <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang" target="_blank" rel="noopener">Prof. En-Hui Yang</a> on adversarial robustness.
+            I have had the privilege of working with <a href="https://wenhuchen.github.io/" target="_blank" rel="noopener">Prof. Wenhu Chen</a> and <a href="https://kuwingfung.github.io/" target="_blank" rel="noopener">Max Ku</a> on image evaluation, <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/a6karimi" target="_blank" rel="noopener">Prof. Amir-Hossein Karimi</a> and Ahmed Abdelaal on generative priors for inverse problems, <a href="https://rali.iro.umontreal.ca/nie/jian-yun-nie/" target="_blank" rel="noopener">Prof. Jian-Yun Nie</a> and Yuxing Tian (Université de Montréal) on search agents, <a href="https://www.mcgill.ca/geography/sieber" target="_blank" rel="noopener">Prof. Renée Sieber</a> and <a href="https://fengran-mo.github.io/" target="_blank" rel="noopener">Dr. Fengran Mo</a> (McGill University) on retrieval benchmarks, and <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang" target="_blank" rel="noopener">Prof. En-Hui Yang</a> on adversarial robustness.
           </p>
           <p>
             I am actively seeking <strong>graduate and research positions</strong> in retrieval, multimodal AI, and generative modeling.
@@ -108,6 +108,22 @@
             <span class="highlight-label">Current Intern</span>
           </div>
         </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="timeline-header">
+          <div>
+            <h3>University of Waterloo</h3>
+            <p class="timeline-institution">Bachelor of Applied Science in Computer Engineering, Option in Artificial Intelligence &middot; CGPA 90.87/100</p>
+          </div>
+          <span class="timeline-date">Sep 2022 &ndash; May 2027</span>
+        </div>
+        <dl class="edu-details">
+          <dt>Coursework</dt>
+          <dd>Machine Learning, Deep Learning, Reinforcement Learning, Computational Intelligence, Co-operative and Adaptive Algorithms, Algorithms and Data Structures, Systems Programming</dd>
+          <dt>Awards</dt>
+          <dd>President&rsquo;s Scholarship of Distinction (2023); Term Dean&rsquo;s Honour List (Fall 2022, Winter 2023, Fall 2023); Term Distinction (Winter 2025, Spring 2026)</dd>
+        </dl>
       </div>
     </div>
   </section>
@@ -161,6 +177,15 @@
           <p class="pub-desc">Full conference version with capacity-matched pixel- and latent-space comparisons across five ImageNet restoration tasks, four solvers, and four priors. Manuscript available upon request.</p>
         </div>
       </div>
+
+      <h3 class="pub-group">In Preparation</h3>
+      <div class="publications">
+        <div class="pub-card pub-card-wip">
+          <span class="pub-venue">In Preparation</span>
+          <h3 class="pub-title">What Reward Do the Metrics Imply in Multimodal Sentiment Analysis?</h3>
+          <p class="pub-authors">Chunlin Ren, <strong>Xianda Du</strong>, Yuyang Zhang, and Robert Mercer</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -175,15 +200,15 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3><a href="https://github.com/vinesmsuic/VIEScore2" target="_blank" rel="noopener">Research Assistant &mdash; VIEScore2</a></h3>
+                <h3><a href="https://github.com/TIGER-AI-Lab/VIEScore2" target="_blank" rel="noopener">Research Assistant &mdash; VIEScore2</a></h3>
                 <p class="timeline-institution">University of Waterloo &middot; Advisor: Prof. Wenhu Chen &middot; Mentor: Max Ku</p>
               </div>
               <span class="timeline-date">Oct 2025 &ndash; Present</span>
             </div>
             <ul>
               <li>Co-first authored <strong>VIEScore2</strong>, a unified VLM evaluator for image generation and editing that jointly predicts quality scores and defect locations on a text-native <strong>N&times;N grid</strong>, with a parameter-free parser that turns predictions into spatially grounded explanations.</li>
-              <li>Unified <strong>38K</strong> training examples from <strong>5 sources</strong> (ImagenWorld, RichHF, PAL4VST, etc.); fine-tuned <strong>Qwen3-VL-8B</strong> via SFT (DeepSpeed ZeRO-3) followed by <strong>GRPO</strong> with cell-level Dice, score-accuracy, and format rewards.</li>
-              <li>Reached overall-score <strong>SRCC 0.601</strong> vs. 0.491 for Gemini-3-Flash, the strongest zero-shot VLM baseline; ranked <strong>1st</strong> in grid IoU on <strong>3 of 6</strong> defect-localization benchmarks and top-3 on 5.</li>
+              <li>Unified <strong>38K</strong> training examples from <strong>5 sources</strong> (ImagenWorld, RichHF, PAL4VST, etc.) with score-only, localization-only, and joint supervision; fine-tuned <strong>Qwen3-VL-8B</strong> via <strong>SFT</strong> (DeepSpeed ZeRO-3) followed by <strong>GRPO</strong> with cell-level <strong>Dice</strong>, score-accuracy, and format rewards.</li>
+              <li>Reached overall-score <strong>SRCC 0.601</strong> vs. <strong>0.491</strong> for Gemini-3-Flash, the strongest zero-shot VLM baseline; ranked <strong>1st</strong> in grid IoU on <strong>3 of 6</strong> defect-localization benchmarks and top-3 on 5, ahead of GPT-5.6 and Claude.</li>
             </ul>
           </div>
         </div>
@@ -199,9 +224,9 @@
               <span class="timeline-date">Aug 2026 &ndash; Present</span>
             </div>
             <ul>
-              <li>Formulated pretrained <strong>MeanFlow</strong> finite-interval transport maps as <strong>controllable priors</strong> for training-free inverse problems, running existing flow solvers (D-Flow, PnP-Flow, MPC-Flow) without retraining.</li>
-              <li>Introduced <strong>Receding-Horizon State Optimization (RHSO)</strong>; best in <strong>35 of 60</strong> task&ndash;metric cells and <strong>200 of 240</strong> pairwise comparisons across 5 ImageNet restoration tasks, 4 solvers, and 4 priors.</li>
-              <li>Built a unified benchmark over pixel- and latent-space priors (JiT, pMF, SiT-XL, iMF) spanning <strong>PyTorch</strong> and <strong>JAX</strong>, with sharded SLURM sweeps on Alliance clusters.</li>
+              <li>Formulated pretrained <strong>MeanFlow</strong> finite-interval transport maps as <strong>controllable priors</strong> for training-free inverse problems, enabling one-evaluation clean-endpoint prediction and running existing flow solvers (<strong>D-Flow</strong>, <strong>PnP-Flow</strong>, <strong>MPC-Flow</strong>) without retraining.</li>
+              <li>Introduced <strong>Receding-Horizon State Optimization (RHSO)</strong>, a model-predictive controller over the generative state; best in <strong>35 of 60</strong> task&ndash;metric cells and <strong>200 of 240</strong> pairwise comparisons across <strong>5 ImageNet restoration tasks</strong>, <strong>4 solvers</strong>, and <strong>4 priors</strong>.</li>
+              <li>Built a unified benchmark over pixel- and latent-space priors (<strong>JiT</strong>, <strong>pMF</strong>, <strong>SiT-XL</strong>, <strong>iMF</strong>) spanning <strong>PyTorch</strong> and <strong>JAX</strong>, with backend-agnostic forward operators, sharded <strong>SLURM</strong> sweeps on Alliance clusters, and PSNR/SSIM/LPIPS reporting.</li>
             </ul>
           </div>
         </div>
@@ -217,9 +242,9 @@
               <span class="timeline-date">Jul 2026 &ndash; Sep 2026</span>
             </div>
             <ul>
-              <li>Co-first authored <strong>Evidence-in-the-Loop</strong>, a self-evolving Proposer&ndash;Solver framework that trains LLM search agents with RL on questions synthesized from <strong>multi-hop Wikidata KG paths</strong> backed by verified, retrievable evidence.</li>
-              <li>Designed <strong>evidence acquisition</strong> and <strong>evidence utilization</strong> process rewards that credit actual retrieval of verified passages instead of entity mentions, curbing reward hacking.</li>
-              <li>Achieved the <strong>best average EM/F1 in all 5 training settings</strong> over SSP and KG-Path, winning <strong>18 of 20</strong> multi-hop comparisons; generated questions lift downstream multi-hop F1 from <strong>30.4 to 35.3</strong>.</li>
+              <li>Co-first authored <strong>Evidence-in-the-Loop</strong>, a self-evolving <strong>Proposer&ndash;Solver</strong> framework that trains LLM search agents with <strong>RL</strong> on questions synthesized online from <strong>multi-hop Wikidata KG paths</strong>, keeping only paths whose every triplet is backed by verified, <strong>E5</strong>-retrievable Wikipedia evidence.</li>
+              <li>Designed two <strong>process rewards</strong>, <strong>evidence acquisition</strong> and <strong>evidence utilization</strong>, that credit actual retrieval of verified passages instead of entity mentions, curbing the <strong>reward hacking</strong> of entity-based rewards (E-GRPO, KG-Path).</li>
+              <li>Achieved the <strong>best average EM/F1 in all 5 training settings</strong> (Qwen2.5-7B Base/Instruct, LLaMA-3.1-8B, Qwen3-8B, Search-R1-7B) over SSP and KG-Path, winning <strong>18 of 20</strong> multi-hop comparisons; Proposer-generated questions lift downstream multi-hop F1 from <strong>30.4 to 35.3</strong>.</li>
             </ul>
           </div>
         </div>
@@ -230,14 +255,14 @@
             <div class="timeline-header">
               <div>
                 <h3><a href="https://github.com/Weather-Archival-Rescue" target="_blank" rel="noopener">Research Assistant &mdash; Weather Archival Rescue</a></h3>
-                <p class="timeline-institution">McGill University &middot; Advisors: Prof. Renée Sieber, Prof. Fengran Mo (RIT) &middot; with RBC Borealis AI and CEIMIA</p>
+                <p class="timeline-institution">McGill University &middot; Advisor: Prof. Renée Sieber &middot; with RBC Borealis AI and CEIMIA</p>
               </div>
               <span class="timeline-date">Sep 2024 &ndash; Present</span>
             </div>
             <ul>
-              <li><strong>WXImpactBench</strong> (ACL 2025 Findings, co-first author): the first benchmark for LLM understanding of disruptive weather impacts (1,736 samples, 6 impact categories); evaluated 8+ LLMs on multi-label classification and 100-passage ranking QA.</li>
-              <li><strong>WeatherArchive-Bench</strong> (SIGIR 2026, co-first author): retrieval-augmented reasoning over 1M+ archival segments and 335 expert queries; benchmarked 13+ retrievers and 17 LLMs, peaking at <strong>95.8%</strong> Recall@100.</li>
-              <li><strong>WXChat</strong> (ongoing): digitization pipeline for Victorian-era newspapers with Tesseract 5 OCR, layout-aware column segmentation, and async GPT-4o-mini post-OCR correction.</li>
+              <li><strong>WXImpactBench</strong> (ACL 2025 Findings, co-first author): built the first benchmark for LLM understanding of disruptive weather impacts (<strong>1,736 samples</strong>, <strong>6 impact categories</strong>) with multi-label classification and <strong>100-passage ranking QA</strong>; evaluated <strong>8+ LLMs</strong> (Llama-3, Qwen2.5, Mixtral, GPT) with 4-bit quantization.</li>
+              <li><strong>WeatherArchive-Bench</strong> (SIGIR 2026, co-first author): built a retrieval-augmented reasoning benchmark over <strong>1M+ archival segments</strong> and <strong>335 expert queries</strong> with <strong>IPCC-aligned</strong> vulnerability assessment; benchmarked <strong>13+ retrievers</strong> (BM25, SPLADE, ANCE, dense, cross-encoder reranking) and <strong>17 LLMs</strong>, peaking at <strong>95.8%</strong> Recall@100.</li>
+              <li><strong>WXChat</strong> (ongoing): developing a digitization pipeline for Victorian-era newspapers with <strong>Tesseract 5</strong> OCR at 600 DPI, layout-aware column segmentation (<strong>OpenCV</strong>; skew correction, CLAHE, Sauvola binarization), and async <strong>GPT-4o-mini</strong> post-OCR correction.</li>
             </ul>
           </div>
         </div>
@@ -253,7 +278,8 @@
               <span class="timeline-date">Jan 2025 &ndash; Apr 2025</span>
             </div>
             <ul>
-              <li>Studied the effects of Gaussian noise (9 levels) and <strong>FGSM</strong> adversarial perturbations on intermediate feature representations of pretrained <strong>ResNet-18</strong> on ImageNet, across 4 network layers.</li>
+              <li>Studied effects of <strong>Gaussian noise</strong> (9 levels, &sigma; = 0.1&ndash;0.9) and <strong>FGSM adversarial perturbations</strong> on intermediate feature representations in pretrained <strong>ResNet-18</strong> on <strong>ImageNet</strong>.</li>
+              <li>Extracted and analyzed feature maps across <strong>4 network layers</strong> (56&times;56 to 7&times;7) using <strong>PyTorch</strong> forward hooks, generating statistical summaries and 2D cross-layer distribution histograms.</li>
             </ul>
           </div>
         </div>
@@ -295,10 +321,29 @@
               <span class="timeline-date">Jan 2026 &ndash; Apr 2026</span>
             </div>
             <ul>
-              <li>Shipped the <strong>Precision Audience</strong> LLM pipeline that turns unstructured advertiser ICPs into executable boolean segment plans across 9 audience sources &times; 10 geo locations per request, built on GPT-5 with Pydantic-typed structured outputs and an async Redis-backed worker pool.</li>
-              <li>Built a <strong>4-layer hallucination detection</strong> system (schema enforcement, reference-grounding, strict enum validation, safeguard rules) so every output segment maps to a validated upstream source.</li>
-              <li>Designed prompt hardening (injection detection, sensitive-data taxonomy) and a typed exception hierarchy with per-geo <strong>partial-success (207)</strong> responses.</li>
-              <li>Scaled coverage to <strong>~12.7K segments</strong> with hybrid retrieval on <strong>Qdrant</strong> (dense + BM25 + RRF, geo-indexed prefilter) and an incremental ingestion pipeline with snapshot/restore rollback to S3.</li>
+              <li>Shipped StackAdapt&rsquo;s <strong>Precision Audience</strong> LLM pipeline that converts unstructured advertiser ICPs into executable boolean segment plans across <strong>9 audience sources &times; 10 geo locations</strong> per request, built on <strong>GPT-5</strong> with <strong>Pydantic</strong>-typed structured outputs and an <strong>async</strong> worker pool backed by <strong>Redis</strong> job tracking.</li>
+              <li>Eliminated silent data corruption by building a <strong>4-layer hallucination detection</strong> system (schema enforcement, <strong>reference-grounding</strong> against candidate sets, strict enum validation, and post-LLM <strong>safeguard rules</strong>), ensuring every audience segment in the output corresponds to a validated upstream source.</li>
+              <li>Reduced unsafe ad targeting by designing <strong>prompt hardening</strong> (injection detection, 10-category sensitive-data taxonomy) and a typed <strong>exception hierarchy</strong> that maps failures to correct <strong>HTTP semantics</strong>, enabling per-geo <strong>partial-success (207)</strong> so multi-country requests degrade gracefully.</li>
+              <li>Scaled audience coverage to <strong>~12.7K segments</strong> across multiple countries with <strong>hybrid vector retrieval</strong> on <strong>Qdrant</strong> (dense + BM25 + RRF, geo-indexed prefilter) and an end-to-end data pipeline with ISO validation, diff-based incremental ingestion, and <strong>snapshot/restore</strong> rollback to S3.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software / Machine Learning Engineer</h3>
+                <p class="timeline-institution">Storytellers.ai</p>
+              </div>
+              <span class="timeline-date">Jun 2025 &ndash; Aug 2025</span>
+            </div>
+            <ul>
+              <li>Built <strong>data quality management</strong> features (dynamic filtering, interactive tables, advanced tooltips) for a large-scale analytics platform, optimizing <strong>SQL</strong> queries to cut load times by up to <strong>15%</strong>.</li>
+              <li>Integrated the <strong>Snowflake</strong> data warehouse via a secure <strong>OAuth</strong> flow with automated permission checks and metadata retrieval through REST APIs.</li>
+              <li>Developed an AI-powered documentation system on <strong>Cloudflare Workers AI</strong> and <strong>Durable Objects</strong> that generates table descriptions from schema and statistical metadata.</li>
+              <li>Replaced static service-account keys with <strong>GCP impersonation</strong> in cloud authentication workflows, strengthening platform security.</li>
             </ul>
           </div>
         </div>
@@ -314,9 +359,10 @@
               <span class="timeline-date">Apr 2025 &ndash; Dec 2025</span>
             </div>
             <ul>
-              <li>Designed a research-oriented <strong>RAG</strong> system for educational QA supporting Qwen, OpenAI, and Gemini through a LangChain-based interface with streaming inference.</li>
-              <li>Built retrieval over course PDFs and slides with hybrid BM25 + dense search, re-ranking, and citation-grounded generation; evaluated with Recall@k, nDCG, and LLM-as-a-judge faithfulness.</li>
-              <li>Implemented tool-augmented querying and model routing to compare quality, latency, and cost trade-offs.</li>
+              <li>Designed and implemented a research-oriented <strong>RAG</strong> system for educational QA, supporting <strong>Qwen, OpenAI, and Gemini</strong> through a flexible <strong>LangChain</strong>-based interface with configurable prompts, per-user API keys, and streaming inference.</li>
+              <li>Built an end-to-end retrieval pipeline over course PDFs and slides with document chunking, dense retrieval in <strong>Supabase</strong>, optional <strong>hybrid BM25 + dense</strong> search, <strong>re-ranking</strong>, and citation-grounded generation.</li>
+              <li>Developed evaluation and monitoring workflows using <strong>Recall@k</strong>, <strong>nDCG</strong>, and <strong>LLM-as-a-judge</strong> faithfulness checks, with run tracing (model, prompt version, retriever settings) to tune RAG on real-user chats.</li>
+              <li>Implemented tool-augmented querying (retrieval, file parsing, syllabus/FAQ lookup) and a model router balancing <strong>quality, latency, and cost</strong>, with timeouts, retries, and safe fallbacks.</li>
             </ul>
           </div>
         </div>
@@ -332,8 +378,26 @@
               <span class="timeline-date">Sep 2024 &ndash; Dec 2024</span>
             </div>
             <ul>
-              <li>Fine-tuned Hugging Face sentiment models with TensorFlow/PyTorch for media content classification, reaching <strong>80%</strong> accuracy.</li>
-              <li>Built a pipeline feeding embeddings and metadata from PostgreSQL on GKE into a custom neural network for scraped-article classification.</li>
+              <li>Fine-tuned <strong>Hugging Face</strong> sentiment analysis models with <strong>TensorFlow/PyTorch</strong> for media content classification, achieving <strong>80%</strong> accuracy.</li>
+              <li>Built a pipeline that transformed embeddings and metadata from a <strong>PostgreSQL</strong> database on <strong>GKE</strong> into a self-designed neural network for scraped-article classification, using <strong>pandas</strong> for data curation and labeling.</li>
+              <li>Optimized news-feed ranking with <strong>Reciprocal Rank Fusion (RRF)</strong>, and set up a <strong>CI/CD pipeline on GCP</strong> (Network Endpoint Groups, Load Balancers, GKE workloads) for Dockerized services.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer</h3>
+                <p class="timeline-institution">LTIMindtree</p>
+              </div>
+              <span class="timeline-date">Jan 2024 &ndash; Apr 2024</span>
+            </div>
+            <ul>
+              <li>Developed, tested, and deployed internal APIs with <strong>Spring</strong> and <strong>OAuth2</strong>, handling data transformation and system integration.</li>
+              <li>Automated cloud-based log downloads with <strong>Gson</strong>, <strong>HttpClient</strong>, <strong>SOAPUI</strong>, and <strong>MuleSoft</strong>, including stress testing.</li>
             </ul>
           </div>
         </div>
@@ -349,8 +413,9 @@
               <span class="timeline-date">Jun 2025 &ndash; Nov 2025</span>
             </div>
             <ul>
-              <li>Framed 15-min crypto returns as a ranking task; trained TabNet, XGBoost, MLP, and LightGBM via Optuna, scoring <strong>0.57 Weighted Spearman</strong> on the public leaderboard.</li>
-              <li>Engineered leak-safe rolling-window features and built an <strong>8-model LightGBM ensemble</strong> with weighted blending to stabilize ranks.</li>
+              <li>Framed 15-min crypto returns as <strong>ranking</strong> under <strong>Weighted Spearman</strong>; trained <strong>TabNet</strong>, <strong>XGBoost</strong>, <strong>MLP</strong>, and <strong>LightGBM</strong> via <strong>Optuna</strong>, finalizing an Optuna LightGBM scoring <strong>0.57 Weighted Spearman</strong> on the public leaderboard.</li>
+              <li>Implemented <strong>leak-safe, rolling-window</strong> features (RSI divergence, distance-to-high/low, volatility) with vectorized NumPy/pandas; importance screening kept <strong>80</strong> features, improving generalization and training speed.</li>
+              <li>Built an <strong>8-model LightGBM ensemble</strong> (varying depth, regularization, seeds, losses) with weighted blending and adaptive clipping, winsorization, normalization, and smoothing to stabilize ranks.</li>
             </ul>
           </div>
         </div>
